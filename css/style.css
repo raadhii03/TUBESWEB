@@ -1,0 +1,14 @@
+:root{--gp-blue:#0b3d91;--gp-red:#e4002b;--gp-bg:#f4f6fa}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--gp-bg)}
+.navbar-gp{background:var(--gp-blue)}
+.navbar-gp .nav-link{color:#dbe5ff}
+.navbar-gp .nav-link.active,.navbar-gp .nav-link:hover{color:#fff}
+.brand-dot{color:var(--gp-red)}
+.btn-gp{background:var(--gp-red);border-color:var(--gp-red);color:#fff}
+.btn-gp:hover{background:#bf0024;border-color:#bf0024;color:#fff}
+#map{height:420px;border-radius:.75rem}
+.stat-num{font-size:2rem;font-weight:700;color:var(--gp-blue)}
+.spbu-item{border-left:4px solid var(--gp-blue)}
+.spbu-item.tutup{border-left-color:#9aa3b2;opacity:.75}
+.dist{font-weight:700;color:var(--gp-red);white-space:nowrap}
+footer{color:#6b7280}
