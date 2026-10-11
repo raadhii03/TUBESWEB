@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasPol - Tambah Data SPBU</title>
+</head>
+<body>
+
+    <header>
+        <h1>GasPol</h1>
+        <p>Aplikasi Pelacak Lokasi SPBU dan Ketersediaan BBM Pertamina</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Daftar SPBU</a></li>
+            <li><a href="form.html">Tambah / Laporkan SPBU</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Form Formulir Laporan / Tambah Data SPBU Baru</h2>
+            <p>Silakan isi formulir di bawah ini untuk melaporkan kondisi, harga, atau menambahkan data SPBU baru.</p>
+
+            <form action="#" method="post">
+                
+                <p>
+                    <label for="nomor_spbu">Nomor SPBU:</label><br>
+                    <input type="text" id="nomor_spbu" name="nomor_spbu" placeholder="Contoh: 31.123.01" required>
+                </p>
+
+                <p>
+                    <label for="nama_jalan">Alamat / Nama Jalan:</label><br>
+                    <input type="text" id="nama_jalan" name="nama_jalan" placeholder="Contoh: Jl. Merdeka No. 10" required>
+                </p>
+
+                <p>
+                    <label for="kota">Kota / Kabupaten:</label><br>
+                    <select id="kota" name="kota" required>
+                        <option value="">-- Pilih Kota --</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="status_operasional">Status Operasional:</label><br>
+                    <select id="status_operasional" name="status_operasional" required>
+                        <option value="buka">Buka 24 Jam</option>
+                        <option value="terbatas">Buka Terbatas (06.00 - 22.00)</option>
+                        <option value="tutup">Tutup / Perbaikan</option>
+                    </select>
+                </p>
+
+                <p>
+                    <strong>Ketersediaan & Update Harga BBM:</strong><br>
+                    
+                    <input type="checkbox" id="pertalite" name="bbm" value="Pertalite">
+                    <label for="pertalite">Pertalite</label>
+                    <label for="harga_pertalite">Harga (Rp/L):</label>
+                    <input type="number" id="harga_pertalite" name="harga_pertalite" placeholder="10000"><br>
+                    
+                    <input type="checkbox" id="solar" name="bbm" value="Solar">
+                    <label for="solar">Solar Subsidi</label>
+                    <label for="harga_solar">Harga (Rp/L):</label>
+                    <input type="number" id="harga_solar" name="harga_solar" placeholder="6800"><br>
+
+                    <input type="checkbox" id="pertamax" name="bbm" value="Pertamax">
+                    <label for="pertamax">Pertamax</label>
+                    <label for="harga_pertamax">Harga (Rp/L):</label>
+                    <input type="number" id="harga_pertamax" name="harga_pertamax" placeholder="12100"><br>
+
+                    <input type="checkbox" id="pertamax_green" name="bbm" value="Pertamax Green">
+                    <label for="pertamax_green">Pertamax Green</label>
+                    <label for="harga_pertamax_green">Harga (Rp/L):</label>
+                    <input type="number" id="harga_pertamax_green" name="harga_pertamax_green" placeholder="13150"><br>
+                    
+                    <input type="checkbox" id="pertamax_turbo" name="bbm" value="Pertamax Turbo">
+                    <label for="pertamax_turbo">Pertamax Turbo</label>
+                    <label for="harga_pertamax_turbo">Harga (Rp/L):</label>
+                    <input type="number" id="harga_pertamax_turbo" name="harga_pertamax_turbo" placeholder="13500"><br>
+                    
+                    <input type="checkbox" id="dexlite" name="bbm" value="Dexlite">
+                    <label for="dexlite">Dexlite</label>
+                    <label for="harga_dexlite">Harga (Rp/L):</label>
+                    <input type="number" id="harga_dexlite" name="harga_dexlite" placeholder="13200"><br>
+
+                    <input type="checkbox" id="pertamina_dex" name="bbm" value="Pertamina Dex">
+                    <label for="pertamina_dex">Pertamina Dex</label>
+                    <label for="harga_pertamina_dex">Harga (Rp/L):</label>
+                    <input type="number" id="harga_pertamina_dex" name="harga_pertamina_dex" placeholder="13850">
+                </p>
+
+                <p>
+                    <label for="catatan">Catatan Tambahan / Keterangan Antrean:</label><br>
+                    <textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="Tuliskan keterangan antrean atau kondisi fasilitas SPBU..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Simpan Data SPBU</button>
+                    <button type="reset">Batal</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GasPol - Tugas Pengembangan Aplikasi Fullstack</p>
+    </footer>
+
+</body>
+</html>
